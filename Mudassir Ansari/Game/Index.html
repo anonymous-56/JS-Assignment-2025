@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+    
+    <div class="scoreboard">
+      <span>Player X: <span id="scoreX">0</span></span>
+      <span>Player O: <span id="scoreO">0</span></span>
+    </div>
+
+    <div id="board" class="board"></div>
+    <button id="restartBtn">Restart Game</button>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content" id="popupContent">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="clickSound" src="click.mp3"></audio>
+  <audio id="winSound" src="win.mp3"></audio>
+  <audio id="drawSound" src="draw.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
